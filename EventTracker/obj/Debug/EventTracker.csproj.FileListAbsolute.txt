@@ -1,7 +1,0 @@
-D:\User files\Source\Repos\EventTracker\EventTracker\bin\Debug\EventTracker.exe.config
-D:\User files\Source\Repos\EventTracker\EventTracker\bin\Debug\EventTracker.exe
-D:\User files\Source\Repos\EventTracker\EventTracker\bin\Debug\EventTracker.pdb
-D:\User files\Source\Repos\EventTracker\EventTracker\obj\Debug\EventTracker.csproj.CoreCompileInputs.cache
-D:\User files\Source\Repos\EventTracker\EventTracker\obj\Debug\EventTracker.exe
-D:\User files\Source\Repos\EventTracker\EventTracker\obj\Debug\EventTracker.pdb
-D:\User files\Source\Repos\EventTracker\EventTracker\obj\Debug\EventTracker.csprojResolveAssemblyReference.cache
