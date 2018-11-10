@@ -12,6 +12,7 @@ namespace EventTracker
     {
         static void Main(string[] args)
         {
+            Console.Write("Loading pages..");
             var sites = new List<string>();
             using (WebClient client = new WebClient())
             {
@@ -24,12 +25,17 @@ namespace EventTracker
                 sites.Add(client.DownloadString("http://www.nintendo.fi/uutiset"));
                 sites.Add(client.DownloadString("http://www.nintendo.fi/pokemon"));
             }
-            Console.WriteLine("Ready..");
+            Console.Write(" Pages are loaded!\n");
+            Console.WriteLine("");
+            Console.WriteLine("Enter Pokémon name below search for specific events.");
+            Console.WriteLine("Write \"exit\" to exit the program.");
+            Console.WriteLine("");
+            Console.Write("Pokémon: ");
             bool close = false;
             while (!close)
             {
-                string pokemon = Console.ReadLine();
-                if (pokemon == "close") close = true;
+                string pokemon = Console.ReadLine().ToLower();
+                if (pokemon == "exit") close = true;
 
                 string dkReg = "/nyheder/[a-z0-9/-]+pokemon[a-z0-9/-]+" + pokemon + "[a-z0-9/-]*";
                 string noReg = "/nyheter/[a-z0-9/-]+pokemon[a-z0-9/-]+" + pokemon + "[a-z0-9/-]*";
@@ -105,12 +111,20 @@ namespace EventTracker
                         list.Add(s);
                     }
                 }
-                foreach (var s in list)
+                if (!list.Any())
                 {
-                    Console.WriteLine(s);
+                    Console.WriteLine("No results found.");
                 }
+                else
+                {
+                    foreach (var s in list)
+                    {
+                        Console.WriteLine(s);
+                    }
+                }
+                Console.WriteLine("");
+                Console.Write("Pokémon: ");
             }
-            
         }
     }
 }

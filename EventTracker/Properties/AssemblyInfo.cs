@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("EventTracker")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyDescription("A basic program to track Pokémon event announcements in the Nordic countries.")]
+[assembly: AssemblyConfiguration("Release")]
+[assembly: AssemblyCompany("Rebecca Heegaard")]
 [assembly: AssemblyProduct("EventTracker")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Copyright © 2018 Rebecca Heegaard")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
